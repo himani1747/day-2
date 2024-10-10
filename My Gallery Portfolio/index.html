@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Gallery</title>
+    <style>
+         body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .gallery img {
+            margin: 10px;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            width: 300px;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Multimedia And Responsive Design Exercise</h1>
+        <section>
+            <h2>Images</h2>
+            <img src="images/WhatsApp Image 2024-10-07 at 13.05.19_6603ae47.jpg" alt="My Family" width="400" height="300">
+            <img src="images/WhatsApp Image 2024-10-07 at 13.05.19_f807d04c.jpg" alt="Birthday Party" width="400" height="300">
+            <img src="images/WhatsApp Image 2024-10-07 at 13.05.20_ddda697a.jpg" alt="Myself" width="400" height="300">
+        </section>
+        <section class="Media">
+            <h2>Videos</h2>
+            <video width="600" height="500" controls>
+                <source src="videos/VID-20240922-WA0002.mp4" type="video/mp4">
+            </video>
+        </section>
+        <section class="Media">
+            <h2>Audio</h2>
+            <audio controls >
+                <source src="audio/WhatsApp Audio 2024-10-07 at 14.28.26_3573f60e.mp3" type="audio/mp3">
+            </audio>
+
+        </section>
+        <section>
+            <h2>Responsive Images</h2>
+            <img src="images/WhatsApp Image 2024-10-07 at 13.05.19_8e4297b2.jpg" 
+            srcset="small.jpg 480w,
+                    medium.jpg 800w
+                    large.jpg 1200w"
+                    sizes="(max-width:600px) 480px,
+                           (max-width:1200px) 800px
+                           1200px"
+                    alt="A Responsive Image">
+            <picture>
+                <source srcset="images/small.jpg" media="(max-width: 600px)">
+                <source srcset="images/medium.jpg" media="(max-width: 1200px)">
+                <img src="images/large.jpg" alt="Responsive Image with Picture Element">
+            </picture>
+
+        
+         </section>
+        
+
+        
+        
+
+    </div>
+    
+</body>
+</html>
